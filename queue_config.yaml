@@ -1,0 +1,8 @@
+queue_id: api-call-queue
+rate_limits:
+  max_dispatches_per_second: 10
+retry_config:
+  max_attempts: 5
+  min_backoff_duration: 0.1s
+  max_backoff_duration: 10s
+  max_doublings: 5
